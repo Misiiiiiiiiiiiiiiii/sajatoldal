@@ -370,6 +370,7 @@ header {
     z-index: -1;
     -webkit-animation: sliderShape 19s linear infinite;
   }
+  
 
   .slider-thumb2::before {
     position: absolute;
@@ -435,6 +436,154 @@ header {
     -webkit-animation: sliderShape 22s linear infinite;
   }
 
+  @media (max-width: 1599px), (max-height: 840px){
+    .slider-thumb1::before {
+      width: 500px;
+      height: 350px;
+      left: 15%;
+      top: 20%;
+    }
+  
+    .slider-thumb2::before {
+      width: 700px;
+      height: 350px;
+      left: 39%;
+      top: 141%;
+    }
+  
+    .slider-thumb3::before {
+      width: 700px;
+      height: 350px;
+      left: 10%;
+      top: 15%;
+    }
+  
+    .slider-thumb4::before {
+      width: 500px;
+      height: 350px;
+      left: 70%;
+      top: 38%;
+    }
+  
+    .slider-thumb5::before {
+      width: 700px;
+      height: 350px;
+      left: -20%;
+      top: 135%;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .slider-thumb1::before {
+      width: 400px;
+      height: 300px;
+      left: 2%;
+      top: 18%;
+    }
+  
+    .slider-thumb2::before {
+      width: 600px;
+      height: 300px;
+      left: 20%;
+      top: 70%;
+    }
+  
+    .slider-thumb3::before {
+      width: 600px;
+      height: 300px;
+      left: 10%;
+      top: 15%;
+    }
+  
+    .slider-thumb4::before {
+      width: 400px;
+      height: 300px;
+      left: 50%;
+      top: 30%;
+    }
+  
+    .slider-thumb5::before {
+      width: 600px;
+      height: 300px;
+      left: -10%;
+      top: 70%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .slider-thumb1::before {
+      width: 300px;
+      height: 250px;
+      left: 0;
+      top: 15%;
+    }
+  
+    .slider-thumb2::before {
+      width: 500px;
+      height: 250px;
+      left: 10%;
+      top: 60%;
+    }
+  
+    .slider-thumb3::before {
+      width: 500px;
+      height: 250px;
+      left: 5%;
+      top: 10%;
+    }
+  
+    .slider-thumb4::before {
+      width: 300px;
+      height: 250px;
+      left: 40%;
+      top: 25%;
+    }
+  
+    .slider-thumb5::before {
+      width: 500px;
+      height: 250px;
+      left: -20%;
+      top: 60%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .slider-thumb1::before {
+      width: 200px;
+      height: 150px;
+      left: -5%;
+      top: 12%;
+    }
+  
+    .slider-thumb2::before {
+      width: 400px;
+      height: 150px;
+      left: 0;
+      top: 50%;
+    }
+  
+    .slider-thumb3::before {
+      width: 400px;
+      height: 150px;
+      left: -5%;
+      top: 5%;
+    }
+  
+    .slider-thumb4::before {
+      width: 200px;
+      height: 150px;
+      left: 20%;
+      top: 20%;
+    }
+  
+    .slider-thumb5::before {
+      width: 400px;
+      height: 150px;
+      left: -30%;
+      top: 50%;
+    }
+  }
+
 
 
   @keyframes sliderShape{
@@ -454,3 +603,127 @@ header {
       transform: translate3d(0,-3px,0) rotateZ(0.01deg);
     }
   }
+
+  /* Default styles for all screen sizes */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  header .logo img {
+    max-height: 40px;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  .about-me {
+    padding: 60px 0;
+  }
+
+  .pfp {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+
+  .profile-info h2 {
+    font-size: 24px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+  }
+
+  .card h3 {
+    font-size: 24px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  form input, form textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  form button[type="submit"] {
+    padding: 5px 10px;
+  }
+
+  footer .logo img {
+    max-height: 100px;
+  }
+
+  .social-links a {
+    padding: 5px;
+  }
+}
+
+/* Styles for screens smaller than 480px */
+@media (max-width: 479px) {
+  .pfp {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .profile-info h2 {
+    font-size: 20px;
+  }
+
+  .profile-info p {
+    font-size: 14px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  form input, form textarea {
+    padding: 3px;
+    margin-bottom: 5px;
+  }
+
+  form button[type="submit"] {
+    padding: 3px 5px;
+  }
+
+  footer .logo img {
+    max-height: 80px;
+  }
+
+  .social-links a {
+    padding: 3px;
+  }
+}
