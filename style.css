@@ -4,7 +4,6 @@
     right: 10px;
 }
 
-
 .btn-dark-mode {
     background-color: transparent;
     border: none;
@@ -12,7 +11,6 @@
     color: #fff;
     font-size: 24px;
 }
-
 
 .fa-moon {
     color: #333;
@@ -121,6 +119,17 @@ body.dark-mode .btn-add {
 
 .btn-delete:hover {
     background-color: #c82333;
+}
+
+
+body.dark-mode a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+body:not(.dark-mode) a {
+    text-decoration: underline;
+    color: #333;
 }
 
 body.dark-mode {
